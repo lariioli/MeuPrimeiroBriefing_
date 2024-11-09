@@ -1,15 +1,7 @@
-
-.navbar .nav-link
-{
-    color: white; 
-    font-weight: bold; 
-    font-size: 1.2rem; 
-}
-.navbar
-{
-  background-color: black;
-}
-.html{
+.navbar{
   background-color: black;
 }
 
+.navbarNav{
+  background-color: black;
+}
