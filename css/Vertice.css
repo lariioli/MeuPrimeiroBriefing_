@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 .navbar .nav-link
 {
     color: white; 
@@ -12,7 +13,7 @@
 .icone-navbar{
   font-size: 15pt;
 }
-.btn-primary
+.btn-outline-light
 {
 width: 90pt;
 height: 40pt;
