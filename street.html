@@ -62,12 +62,12 @@
                 <div class="card">
                     <img src="img/laranja.jpg" class="card-img-top" alt="Imagem da Roupa 1">
                     <div class="card-body">
-                        <h5 class="card-title">Camiseta Masculina Hoshwear Fat Castle Off Whitea</h5>
+                        <h5 class="card-title">Camiseta Masculina Hoshwear Fat Castle Off White</h5>
                         <p class="card-text">R$ 96,90</p>
                         <div class="star-rating">
                             <span>★ ★ ★ ★ ★</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear Fat Castle',  96,90)">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                         <div class="star-rating">
                             <span>★ ★ ★ ★ ★</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear Globe Roxa', 96,90)">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -90,12 +90,12 @@
                 <div class="card">
                     <img src="img/pretabanner.jpg" class="card-img-top" alt="Imagem da Roupa 3">
                     <div class="card-body">
-                        <h5 class="card-title">Camiseta Masculina Hoshwear Circle Pretal</h5>
+                        <h5 class="card-title">Camiseta Masculina Hoshwear Circle Preta</h5>
                         <p class="card-text">R$ 96,90</p>
                         <div class="star-rating">
                             <span>★ ★ ★ ★ ★</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear Circle Preta', 96,90)">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                         <div class="star-rating">
                             <span>★ ★ ★ ★ ☆</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear No Doubt Branca', 129,90)">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                         <div class="star-rating">
                             <span>★ ★ ★ ★ ★</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear Flowers Preta', 139,90)">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                         <div class="star-rating">
                             <span>★ ★ ★ ★ ☆</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear IA Hands Preta', 129,90)">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                         <div class="star-rating">
                             <span>★ ★ ★ ★ ★</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear System Preta', 119,90)">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                         <div class="star-rating">
                             <span>★ ★ ★ ★ ★</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear Smile Skull Branca', 129,90)">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -179,28 +179,33 @@
                         <div class="star-rating">
                             <span>★ ★ ★ ☆ ☆</span>
                         </div>
-                        <button class="btn btn-secondary mt-3" onclick="addToCart()">Comprar</button>
+                        <button class="btn btn-secondary mt-3" onclick="addToCart('Camiseta Masculina Hoshwear Collab Be Off White', 129,90)">Comprar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cartModalLabel">Sucesso</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Produto adicionado ao carrinho com sucesso!
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+    <modal>
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="cartItems" class="list-group">
+                            <li class="list-group-item text-center">Seu carrinho está vazio</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Finalizar Compra</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </modal>
 </main> 
     
 
@@ -219,6 +224,25 @@
     function addToCart() {
         var cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
         cartModal.show();
+    }
+</script>
+<script>
+    let cart = [];
+    let cartCount = 0;
+
+    function addToCart(productName, productPrice) {
+        cart.push({ name: productName, price: productPrice });
+        cartCount++;
+        document.getElementById('cartCount').innerText = cartCount;
+
+        const cartItems = document.getElementById('cartItems');
+        cartItems.innerHTML = '';
+        cart.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.classList.add('list-group-item');
+            li.textContent = `${item.name} - R$ ${item.price.toFixed(2)}`;
+            cartItems.appendChild(li);
+        });
     }
 </script>
 </body>
